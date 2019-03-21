@@ -6,15 +6,15 @@ let dbHost
 let dbUser
 let dbPwd
 if (env === 'dev') {
-  resUrl = 'http://192.168.31.243:8081'
-  mp3FilePath = '/Users/sam/Desktop/resource/mp3'
+  resUrl = 'http://192.168.31.168:8080'
+  mp3FilePath = 'C:\Users\Joling\Desktop\resource\mp3'
   dbHost = 'localhost'
   dbUser = 'root'
-  dbPwd = '12345678'
+  dbPwd = '1234'
 } else if (env === 'prod') {
-  resUrl = 'http://106.15.231.180'
+  resUrl = 'http://39.97.171.160'
   mp3FilePath = '/root/nginx/upload/mp3'
-  dbHost = '106.15.231.180'
+  dbHost = '39.97.171.160'
   dbUser = 'root'
   dbPwd = 'Abcd123456.'
 }
