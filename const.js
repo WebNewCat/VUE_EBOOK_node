@@ -6,7 +6,7 @@ let dbHost
 let dbUser
 let dbPwd
 if (env === 'dev') {
-  resUrl = 'http://192.168.31.168:8080'
+  resUrl = 'http://192.168.31.168:90'
   mp3FilePath = 'C:\Users\Joling\Desktop\resource\mp3'
   dbHost = 'localhost'
   dbUser = 'root'
