@@ -2,7 +2,7 @@ const express = require('express')
 const mysql = require('mysql')
 const constant = require('./const')
 const cors = require('cors')
-const voice = require('./voice')
+// const voice = require('./voice')
 
 const app = express()
 app.use(cors())
@@ -273,6 +273,7 @@ app.get('/book/detail', (req, res) => {
   const conn = connect()
   const fileName = req.query.fileName
   const sql = `select * from book where fileName='${fileName}'`
+	console.log(sql)
   conn.query(sql, (err, results) => {
     if (err) {
       res.json({
