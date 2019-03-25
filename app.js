@@ -273,7 +273,6 @@ app.get('/book/detail', (req, res) => {
   const conn = connect()
   const fileName = req.query.fileName
   const sql = `select * from book where fileName='${fileName}'`
-	console.log(sql)
   conn.query(sql, (err, results) => {
     if (err) {
       res.json({
